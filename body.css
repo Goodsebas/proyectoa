@@ -1,0 +1,421 @@
+.block {
+    background: linear-gradient(to right, #e6a07c, #a86482);  /* Se usa para el degradado de dos colores y se pone un color de fondo blando para que se vea el degradado */
+    color: white;
+    width: 100vw; /* Usa el ancho completo de la ventana */
+    max-width: 100%;
+    height: 70vh; /* Aumenta la altura del contenedor principal */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.text-content, .image-content {
+    flex: 1;
+    padding: 20px; /* Incrementar el padding para más espacio interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.image-content img {
+    max-width: 100%;
+    max-height: 100%; /* Asegura que la imagen no crezca demasiado */
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 2rem; /* Ajustar el tamaño del texto */
+    text-align: center;
+    margin-bottom: 20px; /* Ajustar el margen inferior */
+}
+
+p {
+    font-size: 1rem; /* Ajustar el tamaño del texto */
+    text-align: center;
+    margin-bottom: 30px; /* Ajustar el margen inferior */
+}
+
+.buttons2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-link {
+    text-decoration: none;
+    width: 100%;
+    max-width: 250px;
+}
+
+button {
+    padding: 12px 24px; /* Incrementar el padding del botón */
+    font-size: 1rem; /* Ajustar el tamaño de fuente del botón */
+    color: #A15A47;
+    background-color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+button:hover::before {
+    opacity: 0;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+button:hover {
+    color: white;
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .block {
+        height: 60vh; /* Ajustar la altura para pantallas medianas */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .block {
+        height: 60vh; /* Ajustar la altura para pantallas grandes */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+
+.text-content, .image-content {
+    flex: 1;
+    padding: 20px; /* Incrementar el padding para más espacio interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.image-content img {
+    max-width: 100%;
+    max-height: 100%; /* Asegura que la imagen no crezca demasiado */
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Estilo del enlace mas informacion */
+body {         
+    font-family: Arial, sans-serif;
+    margin: 0;                                          
+    background-color: #f2f2f2;
+    flex-direction: column;
+}
+
+.containerss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el nuevo bloque de enlaces */
+
+.navigation-block {
+    width: 101%; 
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.navigation-link:hover {
+    color: #e6a07c;
+}
+
+.navigation-link span {
+    margin-left: 5px;
+}
+
+
+/* Estilos para la sección de características */
+.features-section {
+    width: 80%;
+    background-color: #fff;  /* ELIMINAR SI NO SE CAMBIA CUANDO ESTE EN MODO OSCURO */
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ELIMINAR SI NO SE CAMBIA CUANDO ESTE EN MODO OSCURO */
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.features-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.features-section video {
+    max-width: 70%; /* Ajusta el ancho máximo del video a un 70% del contenedor */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Estilos para la sección de configuracion */
+.config-section {
+    width: 80%;
+    max-width: 800px;
+    
+    padding: 20px;
+    border-radius: 8px;
+    
+    text-align: center; /* Centrar el contenido del texto */
+}
+
+.config-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.config-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.config-section ol {
+    text-align: left; /* Alinea a la izquierda el contenido de la lista */
+    margin: 0 auto; /* Centra la lista en su contenedor */
+    padding-left: 20px; /* Añade un poco de margen izquierdo para la lista */
+    max-width: 600px;
+}
+
+.config-section li {
+    margin-bottom: 10px;
+}
+
+.config-section strong {
+    color: #333;
+}
+
+/* estilos del comparador de imagen */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+iframe {
+  aspect-ratio: 16/9;
+}
+
+.video-container {
+  margin: 2rem;
+  max-height: 300px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+.container {
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  --position: 50%;
+}
+
+.image-container {
+  max-width: 800px;
+  max-height: 90vh;
+  
+  
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.image-before {
+  position: absolute;
+  inset: 0;
+  width: var(--position);
+  
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+  /* for Firefox */
+  width: 100%;
+  height: 100%;
+  
+}
+
+.slider:focus-visible ~ .slider-button {
+  outline: 5px solid black;
+  outline-offset: 3px;
+  
+}
+
+.slider-line {
+  position: absolute;
+  inset: 0;
+  width: .2rem;
+  height: 100%;
+  background-color: #fff;
+  /* z-index: 10; */
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+  
+}
+
+.slider-button {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  padding: .5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  /* z-index: 100; */
+  box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+  
+}
+
+/* Estilos para la sección de especificaciones */
+.spec-section {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Centrar el contenido del texto */
+    margin-top: 25px; /* Agrega un margen superior para separar de otras secciones */
+}
+
+.spec-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.spec-section table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.spec-table th,
+.spec-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.spec-table thead th {
+    border-bottom: 2px solid #333;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.spec-table tbody tr:hover {
+    background-color: #bebbbb;
+}
+
+.spec-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+.spec-table th {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.block2 {
+    background: linear-gradient(to right, #e6a07c, #a86482);  /* Se usa para el degradado de dos colores y se pone un color de fondo blando para que se vea el degradado */
+    color: white;
+    width: 100vw; /* Usa el ancho completo de la ventana */
+    max-width: 100%;
+    height: 55vh; /* Aumenta la altura del contenedor principal */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Alinea los elementos en columnas */
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}

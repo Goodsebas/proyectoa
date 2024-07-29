@@ -1,0 +1,127 @@
+
+.block {
+    background: linear-gradient(to right, #e6a07c, #a86482);  /* Se usa para el degradado de dos colores y se pone un color de fondo blando para que se vea el degradado */
+    color: white;
+    width: 100vw; /* Usa el ancho completo de la ventana */
+    max-width: 100%;
+    height: 70vh; /* Aumenta la altura del contenedor principal */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.text-content, .image-content {
+    flex: 1;
+    padding: 20px; /* Incrementar el padding para más espacio interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.image-content img {
+    max-width: 100%;
+    max-height: 100%; /* Asegura que la imagen no crezca demasiado */
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 2rem; /* Ajustar el tamaño del texto */
+    text-align: center;
+    margin-bottom: 20px; /* Ajustar el margen inferior */
+}
+
+p {
+    font-size: 1rem; /* Ajustar el tamaño del texto */
+    text-align: center;
+    margin-bottom: 30px; /* Ajustar el margen inferior */
+}
+
+.buttons2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-link {
+    text-decoration: none;
+    width: 100%;
+    max-width: 250px;
+}
+
+button {
+    padding: 12px 24px; /* Incrementar el padding del botón */
+    font-size: 1rem; /* Ajustar el tamaño de fuente del botón */
+    color: #A15A47;
+    background-color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+button:hover::before {
+    opacity: 0;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+button:hover {
+    color: white;
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .block {
+        height: 60vh; /* Ajustar la altura para pantallas medianas */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .block {
+        height: 60vh; /* Ajustar la altura para pantallas grandes */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
